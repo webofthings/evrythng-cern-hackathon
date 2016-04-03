@@ -2,3 +2,6 @@
 [submodule "SigFox/AkeruArduinoLibrary"]
 	path = SigFox/AkeruArduinoLibrary
 	url = https://github.com/Snootlab/Akeru
+[submodule "SigFox/evrythng-sigfox"]
+	path = SigFox/evrythng-sigfox
+	url = https://github.com/webofthings/evrythng-sigfox.git
