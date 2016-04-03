@@ -1,0 +1,4 @@
+
+[submodule "SigFox/AkeruArduinoLibrary"]
+	path = SigFox/AkeruArduinoLibrary
+	url = https://github.com/Snootlab/Akeru
