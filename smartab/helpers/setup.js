@@ -8,11 +8,7 @@ var fs = require("fs");
 const moment = require("moment");
 
 
-EVT.setup({
-    apiKey: "iNxi6Sw4qx0Ndmq6GOaFNrzuUC1qtDJWlu95VNoRNgzLVaN4krmII2JI5NRBa7hEzb6FZkwTEcfU56Yb"
-});
-
-const operator = new EVT.Operator("iNxi6Sw4qx0Ndmq6GOaFNrzuUC1qtDJWlu95VNoRNgzLVaN4krmII2JI5NRBa7hEzb6FZkwTEcfU56Yb");
+const operator = new EVT.Operator("");
 operator.project().create({
     name: 'Radon Project'
 }).then(function (project) {
