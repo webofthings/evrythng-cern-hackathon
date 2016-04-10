@@ -8,9 +8,8 @@
 
 import paho.mqtt.client as mqtt
 from json import load, loads, dumps
-    
+
 lab_fan = dict(thng_id = "UXQWgh5UKtqDBfSATSCe2pym", api_key = "6JGcFmD0Zg8cZ1zmK4zNpdnNjgDHEnd7LRuW3M1474jIxiHTwxuxlyOeRatScno7vib4i0P3Dh42XGYO", thng_property = "state")
-#radon_app_user_api_key = "Oght3zLitkgez8JuuP1UHwPiZ8uHGb6hdoLapKPs0R8VPkGOSdLCa2pt8Xpw7iHxwMXfM8QsFsxAHo3k"
 
 def on_connect(client, obj, flags, rc):
     print("Connecting")
