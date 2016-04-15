@@ -63,7 +63,7 @@ void setup()
   }
 }
 
-
+char payload[32];
 volatile int current_level;
 int previous_level = 0;
 void loop()
@@ -84,11 +84,9 @@ void loop()
   delay(8000);
   current_level = analogRead(A0);
   if (previous_level != current_level) {
-    char payload[32];
     sprintf(payload, "[{\"value\":%d}]", current_level);
 
     previous_level = current_level;
     client.publish("/thngs/"  THNG_ID  "/properties/concentration", payload);
-    free(payload);
   }
 }
